@@ -28,13 +28,22 @@ function Dice() {
     const dice = Math.trunc(Math.random() * 4) + 1;
     console.log(dice);
   }
+  // General function to roll a dice
+  function rollDice(dieNumber) {
+    const dice = Math.trunc(Math.random() * dieNumber) + 1;
+    console.log(dice);
+  }
   rollDice10();
   rollDice12();
   rollDice20();
   rollDice8();
   rollDice6();
   rollDice4();
-  return <div>Roll a Dice</div>;
+  return (
+    <div>
+      <h1>Roll a Dice</h1>
+    </div>
+  );
 }
 
 export default Dice;
