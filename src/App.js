@@ -3,34 +3,35 @@ import "./Style/normalize.css";
 import Header from "./components/Header";
 import Dice from "./components/Dice";
 import ForestPart1 from "./Pages/Forest/ForestPart1";
-import {
-  BrowserRouter as Router,
-  Route,
-  Routes,
-  Link,
-  useNavigate,
-} from "react-router-dom";
+import ReactDOM from "react-dom/client";
+import React from "react";
+import Home from "./Pages/Home";
+
+import { BrowserRouter, Routes, Link, Route } from "react-router-dom";
+export const AppData = React.createContext();
 
 function App() {
-  const navigate = useNavigate();
-  const navigateToForest = () => {
-    // 👇️ navigate to /contacts
-    navigate("/forest");
-  };
   return (
-    <Router>
+    // <div className="App">
+    //   <Header location="Hell" />
+    //   <header className="App-header">
+    //     <h1>Single player DND</h1>
+    //   </header>
+    //   <Dice />
+    // </div>
+
+    <AppData.Provider>
       <div className="App">
-        <Header location="Hell" />
-        <header className="App-header">
-          <h1>Single player DND</h1>
+        <BrowserRouter>
           <Routes>
-            <Route path="/forest" element={<ForestPart1 />} />
-            <button onClick={navigateToForest}>Contacts</button>
+            <Route exact path="/forest-1" element={<ForestPart1 />} />
+            {/* <Route exact path="/forest-2" element={<ForestPart2 />} />
+            <Route exact path="/forest-3" element={<ForestPart3 />} /> */}
+            <Route exact path="/" element={<Home />} />
           </Routes>
-        </header>
-        <Dice />
+        </BrowserRouter>
       </div>
-    </Router>
+    </AppData.Provider>
   );
 }
 

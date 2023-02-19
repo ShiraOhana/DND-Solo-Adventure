@@ -9,18 +9,18 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 function ForestPart1() {
   return (
-    <Router>
-      <Route exact path="/forest">
-        <div>
-          <Header />
-          <Title location="Forest" />
-          <Directions directions="Story in the forest...." />
-          <Clue clue="the content of the clue from props in forest" />
-          <Dice />
-          <Footer />
-        </div>
-      </Route>
-    </Router>
+    // <Router>
+    //   <Route path="/forest">
+    <div>
+      <Header />
+      <Title location="Forest" />
+      <Directions directions="Story in the forest...." />
+      <Clue clue="the content of the clue from props in forest" />
+      <Dice />
+      <Footer />
+    </div>
+    //   </Route>
+    // </Router>
   );
 }
 
