@@ -1,7 +1,7 @@
 import React from "react";
 
-function Title() {
-  return <div>Title</div>;
+function Title(props) {
+  return <div>Location: {props.location}</div>;
 }
 
 export default Title;
