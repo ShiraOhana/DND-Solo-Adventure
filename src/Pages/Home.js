@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "../components/Header";
 import Dice from "../components/Dice";
+import Footer from "../components/Footer";
 import { Link } from "react-router-dom";
 
 function Home() {
@@ -8,12 +9,12 @@ function Home() {
     <div>
       {" "}
       <div className="App">
-        <Header location="Hell" />
-        <header className="App-header">
-          <h1>Single player DND</h1>
-        </header>
-        <Dice />
-        <Link to="forest-1">Forest</Link>
+        <Header />
+        <h3>Welcome to dnd single player advanture!</h3>
+        <button>
+          <Link to="forest-1">Get into the Forest</Link>
+        </button>
+        <Footer />
       </div>
     </div>
   );

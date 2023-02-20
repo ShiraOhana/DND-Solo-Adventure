@@ -1,9 +1,12 @@
 import "./Style/App.css";
 import "./Style/normalize.css";
-import Header from "./components/Header";
-import Dice from "./components/Dice";
 import ForestPart1 from "./Pages/Forest/ForestPart1";
-import ReactDOM from "react-dom/client";
+import ForestPart2 from "./Pages/Forest/ForestPart2";
+import ForestPart3 from "./Pages/Forest/ForestPart3";
+import CemeteryPart1 from "./Pages/Cemetery/CemeteryPart1";
+import CemeteryPart2 from "./Pages/Cemetery/CemeteryPart2";
+import PubPart1 from "./Pages/Pub/PubPart1";
+
 import React from "react";
 import Home from "./Pages/Home";
 
@@ -12,21 +15,16 @@ export const AppData = React.createContext();
 
 function App() {
   return (
-    // <div className="App">
-    //   <Header location="Hell" />
-    //   <header className="App-header">
-    //     <h1>Single player DND</h1>
-    //   </header>
-    //   <Dice />
-    // </div>
-
     <AppData.Provider>
       <div className="App">
         <BrowserRouter>
           <Routes>
             <Route exact path="/forest-1" element={<ForestPart1 />} />
-            {/* <Route exact path="/forest-2" element={<ForestPart2 />} />
-            <Route exact path="/forest-3" element={<ForestPart3 />} /> */}
+            <Route exact path="/forest-2" element={<ForestPart2 />} />
+            <Route exact path="/forest-3" element={<ForestPart3 />} />
+            <Route exact path="/cemetery-1" element={<CemeteryPart1 />} />
+            <Route exact path="/cemetery-2" element={<ForestPart2 />} />
+            <Route exact path="/pub-1" element={<PubPart1 />} />
             <Route exact path="/" element={<Home />} />
           </Routes>
         </BrowserRouter>
