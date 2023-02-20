@@ -15,7 +15,7 @@ function ForestPart3() {
       <Directions directions="Story in the forest...." />
       <Clue clue="the content of the clue from props in forest" />
       <button>
-        <Link to="/forest-1">Next</Link>
+        <Link to="/pub-1">To the Pub</Link>
       </button>
       <Dice />
       <Footer />

@@ -23,7 +23,7 @@ function App() {
             <Route exact path="/forest-2" element={<ForestPart2 />} />
             <Route exact path="/forest-3" element={<ForestPart3 />} />
             <Route exact path="/cemetery-1" element={<CemeteryPart1 />} />
-            <Route exact path="/cemetery-2" element={<ForestPart2 />} />
+            <Route exact path="/cemetery-2" element={<CemeteryPart2 />} />
             <Route exact path="/pub-1" element={<PubPart1 />} />
             <Route exact path="/" element={<Home />} />
           </Routes>

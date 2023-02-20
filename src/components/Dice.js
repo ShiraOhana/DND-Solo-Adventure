@@ -2,56 +2,57 @@ import React, { useState } from "react";
 
 function Dice() {
   // Rolling the dice functionality
-  // btnRoll.EventListener('click', function () {
-  const [roll, setRoll] = useState(null);
+  const [roll20, setRoll20] = useState(null);
+  const [roll12, setRoll12] = useState(null);
+  const [roll10, setRoll10] = useState(null);
+  const [roll8, setRoll8] = useState(null);
+  const [roll6, setRoll6] = useState(null);
+  const [roll4, setRoll4] = useState(null);
 
   function rollDice20() {
-    let dice = Math.trunc(Math.random() * 20) + 1;
-    dice = roll;
+    setRoll20(Math.trunc(Math.random() * 20) + 1);
   }
   function rollDice12() {
-    const dice = Math.trunc(Math.random() * 12) + 1;
-    console.log(dice);
+    setRoll12(Math.trunc(Math.random() * 12) + 1);
   }
+
   function rollDice10() {
-    let dice = Math.trunc(Math.random() * 10) + 1;
-    console.log(dice);
-    dice = roll;
+    setRoll10(Math.trunc(Math.random() * 10) + 1);
   }
   function rollDice8() {
-    const dice = Math.trunc(Math.random() * 8) + 1;
-    console.log(dice);
+    setRoll8(Math.trunc(Math.random() * 8) + 1);
   }
   function rollDice6() {
-    const dice = Math.trunc(Math.random() * 6) + 1;
-    console.log(dice);
+    setRoll6(Math.trunc(Math.random() * 6) + 1);
   }
   function rollDice4() {
-    const dice = Math.trunc(Math.random() * 4) + 1;
-    console.log(dice);
+    setRoll4(Math.trunc(Math.random() * 4) + 1);
   }
-  // General function to roll a dice
+  // General function to roll a dice?
   // function rollDice(dieNumber) {
   //   const dice = Math.trunc(Math.random() * dieNumber) + 1;
   //   console.log(dice);
   // }
 
-  rollDice10();
-  rollDice12();
-  rollDice20();
-  rollDice8();
-  rollDice6();
-  rollDice4();
   return (
     <div>
       <h1>Roll a Dice</h1>
+      <button onClick={rollDice20}>Roll 1d20</button>
+      <div>{roll20}</div>
       <button onClick={rollDice12}>Roll 1d12 </button>
-      <p>{roll}</p>
-      <button>Roll 1d20</button>
-      <button>Roll 1d10</button>
-      <button>Roll 1d8</button>
-      <button>Roll 1d6</button>
-      <button>Roll 1d4</button>
+      <div>{roll12}</div>
+
+      <button onClick={rollDice10}>Roll 1d10</button>
+      <div>{roll10}</div>
+
+      <button onClick={rollDice8}>Roll 1d8</button>
+      <div>{roll8}</div>
+
+      <button onClick={rollDice6}>Roll 1d6</button>
+      <div>{roll6}</div>
+
+      <button onClick={rollDice4}>Roll 1d4</button>
+      <div>{roll4}</div>
     </div>
   );
 }
