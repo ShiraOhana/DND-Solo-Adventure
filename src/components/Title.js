@@ -1,7 +1,10 @@
 import React from "react";
-
 function Title(props) {
-  return <div>Location: {props.location}</div>;
+  return (
+    <h3 style={{ fontSize: "30px", color: "green", margin: "20px" }}>
+      Location: {props.location}
+    </h3>
+  );
 }
 
 export default Title;
