@@ -1,4 +1,7 @@
 import React, { useState } from "react";
+import Card from "react-bootstrap/Card";
+import Button from "react-bootstrap/Button";
+import ListGroup from "react-bootstrap/ListGroup";
 
 function Dice() {
   // Rolling the dice functionality
@@ -36,23 +39,42 @@ function Dice() {
 
   return (
     <div>
-      <h1>Roll a Dice</h1>
-      <button onClick={rollDice20}>Roll 1d20</button>
-      <div>{roll20}</div>
-      <button onClick={rollDice12}>Roll 1d12 </button>
-      <div>{roll12}</div>
+      <Card style={{ width: "18rem" }}>
+        <Card.Body>
+          <Card.Title>Roll a Dice </Card.Title>
+          <ListGroup variant="flush">
+            <Button variant="primary mt-2" onClick={rollDice20}>
+              Roll 1d20
+            </Button>
 
-      <button onClick={rollDice10}>Roll 1d10</button>
-      <div>{roll10}</div>
+            <div class="font-weight-bold">{roll20}</div>
+            <Button variant="primary mt-2" onClick={rollDice12}>
+              Roll 1d12{" "}
+            </Button>
+            <div class="font-weight-bold">{roll12}</div>
 
-      <button onClick={rollDice8}>Roll 1d8</button>
-      <div>{roll8}</div>
+            <Button variant="primary  mt-2" onClick={rollDice10}>
+              Roll 1d10
+            </Button>
+            <div class="font-weight-bold">{roll10}</div>
 
-      <button onClick={rollDice6}>Roll 1d6</button>
-      <div>{roll6}</div>
+            <Button variant="primary  mt-2" onClick={rollDice8}>
+              Roll 1d8
+            </Button>
+            <div class="font-weight-bold">{roll8}</div>
 
-      <button onClick={rollDice4}>Roll 1d4</button>
-      <div>{roll4}</div>
+            <Button variant="primary  mt-2" onClick={rollDice6}>
+              Roll 1d6
+            </Button>
+            <div class="font-weight-bold">{roll6}</div>
+
+            <Button variant="primary mt-2" onClick={rollDice4}>
+              Roll 1d4
+            </Button>
+            <div class="font-weight-bold">{roll4}</div>
+          </ListGroup>
+        </Card.Body>
+      </Card>
     </div>
   );
 }

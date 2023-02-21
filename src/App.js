@@ -6,6 +6,7 @@ import ForestPart3 from "./Pages/Forest/ForestPart3";
 import CemeteryPart1 from "./Pages/Cemetery/CemeteryPart1";
 import CemeteryPart2 from "./Pages/Cemetery/CemeteryPart2";
 import PubPart1 from "./Pages/Pub/PubPart1";
+import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 
 import React from "react";
 import Home from "./Pages/Home";

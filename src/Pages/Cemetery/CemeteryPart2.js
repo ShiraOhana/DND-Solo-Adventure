@@ -6,6 +6,7 @@ import Clue from "../../components/Clue";
 import Dice from "../../components/Dice";
 import Footer from "../../components/Footer";
 import { Link } from "react-router-dom";
+import { Button } from "react-bootstrap";
 function CemeteryPart2() {
   return (
     <div>
@@ -13,9 +14,9 @@ function CemeteryPart2() {
       <Title location="Cemetery" />
       <Directions directions="Story in the cemetery...." />
       <Clue clue="the content of the clue from props in forest" />
-      <button>
+      <Button variant="primary">
         <Link to="/">Finish</Link>
-      </button>
+      </Button>
       <Dice />
       <Footer />
     </div>
