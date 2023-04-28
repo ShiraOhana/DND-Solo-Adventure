@@ -21,14 +21,14 @@ Soon enough, their castle was in view. It was a monstrosity of a house on the ot
 
 Once they arrived, their noble steeds came to a halting stop."
       />
-      <Clue clue="the content of the clue from props in forest" />
       <Button class="btn" variant="success" size="lg">
         <Link class="text-white text-decoration-none" to="/forest-2">
           Next
         </Link>
       </Button>
+      <Content />
+
       <Dice />
-      <Content content="which part cant i see which part cant i see which part cant i see which part cant i seewhich part cant i see which part cant i see which part cant i see which part cant i seewhich part cant i see which part cant i see which part cant i see which part cant i seewhich part cant i see which part cant i see which part cant i see which part cant i seewhich part cant i see which part cant i see which part cant i see which part cant i seewhich part cant i see which part cant i see which part cant i see which part cant i see" />
       <Footer />
     </div>
   );

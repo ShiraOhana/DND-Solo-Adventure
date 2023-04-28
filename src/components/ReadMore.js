@@ -32,7 +32,9 @@ const Content = () => {
   return (
     <div className="container">
       <h2>
-        <ReadMore>If you roll above 15, you can open the clue:</ReadMore>
+        <ReadMore>
+          If you roll above 15, you can open the clue: Here is the hidden clue!
+        </ReadMore>
       </h2>
     </div>
   );
