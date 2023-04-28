@@ -2,7 +2,7 @@ import React from "react";
 import Header from "../../components/Header";
 import Title from "../../components/Title";
 import Directions from "../../components/Directions";
-import Clue from "../../components/Clue";
+import Clue from "../../components/ReadMore";
 import Dice from "../../components/Dice";
 import Footer from "../../components/Footer";
 import { Link } from "react-router-dom";
