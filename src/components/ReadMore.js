@@ -10,7 +10,7 @@
 
 // export default Clue;
 import React, { useState } from "react";
-// import "./App.css";
+import "../Style/App.css";
 
 const ReadMore = ({ children }) => {
   const text = children;
@@ -20,28 +20,19 @@ const ReadMore = ({ children }) => {
   };
   return (
     <p className="text">
-      {isReadMore ? text.slice(0, 150) : text}
+      {isReadMore ? text.slice(0, 45) : text}
       <span onClick={toggleReadMore} className="read-or-hide">
-        {isReadMore ? "...read more" : " show less"}
+        {isReadMore ? " - open clue -" : " close clue"}
       </span>
     </p>
   );
 };
 
-const Content = (props) => {
+const Content = () => {
   return (
     <div className="container">
       <h2>
-        <ReadMore>
-          GeeksforGeeks: A Computer Science portal for geeks. It contains well
-          written, well thought and well explained computer science, programming
-          articles and quizzes. It provides a variety of services for you to
-          learn, so thrive and also have fun! Free Tutorials, Millions of
-          Articles, Live, Online and Classroom Courses ,Frequent Coding
-          Competitions, Webinars by Industry Experts, Internship opportunities,
-          and Job Opportunities. Knowledge is power!
-          {props.content}
-        </ReadMore>
+        <ReadMore>If you roll above 15, you can open the clue:</ReadMore>
       </h2>
     </div>
   );

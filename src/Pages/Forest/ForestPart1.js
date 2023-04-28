@@ -28,7 +28,7 @@ Once they arrived, their noble steeds came to a halting stop."
         </Link>
       </Button>
       <Dice />
-      <Content content="which part cant i see which part cant i see which part cant i see which part cant i see" />
+      <Content content="which part cant i see which part cant i see which part cant i see which part cant i seewhich part cant i see which part cant i see which part cant i see which part cant i seewhich part cant i see which part cant i see which part cant i see which part cant i seewhich part cant i see which part cant i see which part cant i see which part cant i seewhich part cant i see which part cant i see which part cant i see which part cant i seewhich part cant i see which part cant i see which part cant i see which part cant i see" />
       <Footer />
     </div>
   );
