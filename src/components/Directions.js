@@ -7,16 +7,18 @@ import Col from "react-bootstrap/Col";
 function Directions(props) {
   return (
     <Container>
-      <Row>
-        <Col>
-          <Card
-            style={{ width: "50rem", textAlign: "center", align: "center" }}
-          >
-            Directions: {props.directions}
-          </Card>
-        </Col>
-        <Col></Col>
-      </Row>
+      {/* <Row> */}
+      <Card
+        style={{
+          textAlign: "center",
+          align: "center",
+          padding: "1.5rem",
+          margin: "10rem",
+        }}
+      >
+        Directions: {props.directions}
+      </Card>
+      {/* </Row> */}
     </Container>
   );
 }
