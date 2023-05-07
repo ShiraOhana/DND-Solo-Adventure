@@ -6,7 +6,16 @@ function Header() {
   return (
     <Navbar bg="light" expand="lg">
       <Container>
-        <Navbar.Brand href="/">D&D Solo Adventure</Navbar.Brand>
+        <img
+          alt=""
+          src={require("../Style/dnd-logo.png")}
+          width="50"
+          height="50"
+          className="d-inline-block align-top"
+          margin="10px"
+        />
+        <Navbar.Brand href="/"> D&D Solo Adventure</Navbar.Brand>
+
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
